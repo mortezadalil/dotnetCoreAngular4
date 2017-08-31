@@ -35,16 +35,15 @@ namespace SuperCoolApp
     // This method gets called by the runtime. Use this method to add services to the container.
     public void ConfigureServices(IServiceCollection services)
     {
-      services.AddDbContext<CodemyDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("Default")));
+      services.AddDbContext<CodemyDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultLocalDb")));
       // Add framework services.
 
 
       
       // Adds the services required for building
       services.AddMvc();
-      services.AddTransient<IUnitOfWork, UnitOfWork>();
+      services.AddScoped<IUnitOfWork, UnitOfWork>();
 
-      services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
       // Add application services.
       services.AddTransient<IUserDetailService, UserDetailService>();
     }
