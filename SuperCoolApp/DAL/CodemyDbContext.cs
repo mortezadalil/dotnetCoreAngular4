@@ -6,9 +6,6 @@ namespace SuperCoolApp.DAL
 {
   public class CodemyDbContext : DbContext
   {
-    public CodemyDbContext()
-    {
-    }
 
     public CodemyDbContext(DbContextOptions<CodemyDbContext> options) : base(options)
     {

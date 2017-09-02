@@ -10,16 +10,16 @@ namespace SuperCoolApp.DAL.Repository
     {
         private CodemyDbContext _context;
 
-        //public UnitOfWork(SocketDbContext context)
-        //{
-        //    _context = context;
-        //}
- 
-        //Delete this default constructor if using an IoC container
-        public UnitOfWork()
-        {
-            _context = new CodemyDbContext();
-        }
+    public UnitOfWork(CodemyDbContext context)
+    {
+      _context = context;
+    }
+
+    //Delete this default constructor if using an IoC container
+    //public UnitOfWork()
+    //    {
+    //        _context = new CodemyDbContext();
+    //    }
 	
     
         //public IGroupdeviceRepository Groupdevices => new GroupdeviceRepository(_context);
