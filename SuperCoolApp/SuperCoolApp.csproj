@@ -6,7 +6,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="BL\ViewModel\" />
-    <Folder Include="Domain\Enum\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
   <ItemGroup>
