@@ -25,6 +25,10 @@ namespace SuperCoolApp.DAL
     public DbSet<WorkshopTag> WorkShopTags { get; set; }
     public DbSet<Tag> Tags { get; set; }
     public DbSet<Category> Categories { get; set; }
+    public DbSet<Order> Orders { get; set; }
+    public DbSet<DownloadLink> DownloadLinks { get; set; }
+    public DbSet<WorkshopFile> WorkshopFiles { get; set; }
+
 
 
 
